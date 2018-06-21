@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="euc-kr">
+    <title>JOIN</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<style>
+    body { display: table; margin-left: auto; margin-right: auto; }
+    label { display: inline-block; width:120px; }
+    input { display: inline-block; width:160px; }
+</style>
+<body>
+ <div id="page-wrap">
+    <form action="" method="post">
+        <fieldset>
+        <legend>회원정보 입력</legend>
+        <table id="join" border="1">
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" name="id" id="id"></td>
+                <td><input type="button" value="중복확인"></td>
+            </tr>
+            <tr>
+                <td>패스워드</td>
+                <td colspan="2"><input type="password" name="pw" id="pw"></td>
+            </tr>
+            <tr>
+                <td>패스워드</td>
+                <td colspan="2"><input type="password" name="pw_test" id="pw_test"></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td colspan="2"><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td colspan="2"><input type="number" name="age" id="age"></td>
+            </tr>
+            <tr>
+                <td>자신을 소개하는<br>한 단어</td>
+                <td colspan="2"><input type="number" name="age" id="age"></td>
+            </tr>
+            <tr id="center-align">
+                <td colspan="3"><input type="submit" value="회원가입">&nbsp;<input type="reset" value="다시쓰기"></td>
+            </tr>
+        </fieldset>
+        </table>
+    </form>
+ </div>
+</body>
+</html>

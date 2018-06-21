@@ -1,0 +1,78 @@
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+body { font-family:'Nanum Gothic';display: table; position: relative; background-color:lavenderblush;
+     width:100%; margin: auto 0; text-align: center;}
+#top { margin: 2%;} /*헤더*/
+footer {background-color: lightsteelblue; padding: 15px;}
+header:hover {opacity: 0.5;}
+/*상단 메뉴*/
+ul { list-style: none; margin-left: 0; }
+ul > li { display: inline-block; }
+ul > li > a {
+ color: #fff; background-color: lightsteelblue; font-size:1.5em; padding-left: 10px; padding-right:10px;
+ font-family: 'BenchNine', Arial, sans-serif; text-transform: uppercase; font-weight: 700;
+ text-decoration: none; display: block; padding: 10px 50px;
+}
+ul > li:hover > a, ul > li:focus > a, ul > li:active > a, ul > li.active >a {
+ box-shadow: 0 0 0 10px rgba(176,196,222,1.0) inset, 0 0 0 150px rgba(255,240,245,1.0) inset;
+ color: gray;
+ transition:all 0.8s, color 0.3s 0.3s;
+}
+
+/*내용*/
+#content { padding-top: 30px; padding-bottom: 30px; padding-left:10px; padding-right:10px; margin:auto 0;}
+
+/*mbti*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    display: inline-block;
+}
+.card:hover {
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2);
+    opacity: 0.5;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 2px 16px;
+}
+/*~형글씨*/
+.script {
+    font-family: "Seaweed Script"; color: #fff;
+    font-size: 30px; position: relative;
+    margin:0;padding-bottom: 15px;
+
+  }
+  .script span { background-color: #222; padding: 0 0.3em; }
+  .script:before { content:""; display: block; position: absolute; z-index:-1;
+    top: 50%; width: 100%;}
+
+
+/*그냥 기본 설정들*/
+input[type='submit'] {border-radius:15px; border:0px; background-color:lightsteelblue; color:white; font-family:'Nanum Gothic'; width: 6em; height: 3em;font-size: 1.0em;}
+input[type='submit']:hover {background-color:#eb6670;}
+input[type='reset'] {border-radius:15px; border:0px; background-color:lightsteelblue; color:white;font-family:'Nanum Gothic'; width: 6em; height: 3em;font-size: 1.0em;}
+input[type='reset']:hover {background-color:#eb6670;}
+input[type='button'] {border-radius:15px; border:0px; background-color:lightsteelblue; color:white;font-family:'Nanum Gothic'; width: 6em; height: 3em;font-size: 1.0em;}
+input[type='button']:hover {background-color:#eb6670;}
+
+/*회원가입창*/
+#join { text-align: left; }
+#center-align { text-align: center;}
+
+/*recoredList.html*/
+#listWrapper {width: 60%; margin: 0 auto;}
+#num {display:inline;  border: 1px solid gray;}
+#title{display: inline; text-align:center; border: 1px solid gray;}
+#button{display:inline; text-align: right; border: 1px solid gray;}
+
+/*test.html*/
+.question {margin-bottom:20px;}
+.mbtiIntro {margin-bottom: 80px;}

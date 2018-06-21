@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="euc-kr">
+    <title>MY PERSONALITY</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<!--header-->
+ <header id="top">
+    <a href="index.html"><img src="img/logo.png" width="1000px"></a>
+ </header>
+
+ <nav id="menu">
+    <ul class="menubar1">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mbti.html">MBTI?</a></li>
+        <li><a href="test.html">test of my personality</a></li>
+        <li><a href="recordList.html">record of my personality</a></li>
+    </ul>
+ </nav>
+ 
+ <!--main content-->
+ <section id="content">
+    <article>
+    <center>
+    <form>
+        <table>
+            <tr style="text-align:right;">
+                <td colspan="6"><input type="button" value="글 목록" onclick="location.replace('recordList.html')"></td>
+            </tr>
+            <tr style="text-align:center;">
+                <td>제목</td>
+                <td colspan="5"><input type="text" name="title" size="90" required></td>
+            </tr>
+            <tr>
+                <td>글쓴이</td>
+                <td><input type="text" name="name" required></td>
+                <td>날짜</td>
+                <td>
+                    <input type="date" id="userdate" name="userdate" value="2018-06-21">
+                </td>
+                <td>타입 선택</td>
+                <td>
+                    <select name="mbti">
+                       <option value="">MBTI</option>
+                        <option value="INTJ">INTJ</option>
+                        <option value="INTP">INTP</option>
+                        <option value="ENTJ">ENTJ</option>
+                        <option value="ENTP">ENTP</option>
+                        <option value="INFJ">INFJ</option>
+                        <option value="INFP">INFP</option>
+                        <option value="ENFJ">ENFJ</option>
+                        <option value="ENFP">ENFP</option>
+                        <option value="ISTJ">ISTJ</option>
+                        <option value="ISFJ">ISFJ</option>
+                        <option value="ESTJ">ESTJ</option>
+                        <option value="ESFJ">ESFJ</option>
+                        <option value="ISTP">ISTP</option>
+                        <option value="ISFP">ISFP</option>
+                        <option value="ESTP">ESTP</option>
+                        <option value="ESFP">ESFP</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6"><textarea rows="15" cols="100" placeholder="결과에 대한 생각이나 느낀 점등을 기록하세요"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="8" style="text-align: center; padding:10px;">
+                    <input type="submit" value="작성" onclick="recordComplete()">&nbsp;<input type="reset" value="초기화">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </center>
+    </article>
+ </section>
+
+ <!--footer-->
+ <footer>
+    Copyright (c) 2018 JungYookyung
+ </footer>
+
+</body>
+</html>
